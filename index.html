@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <header>
+            <figure>
+                <img src="" alt="">
+            </figure>
+            <p>
+                <span>.Cherry</span>
+                <span>Files</span>
+            </p>
+        </header>
+        <div>
+            <!--Dropzone-->
+            <section style="max-width: 520px; width: 100%">
+                <section>
+                    <p>
+                        "Déposez ici vos fichiers."
+                        <br>
+                        "2Go max."
+                    </p>
+                </section>
+
+            </section>
+            <p></p>
+            <!--Dropzone menu-->
+            <section>
+                <button>Vider</button>
+                <label for="">
+                    "Ajouter des fichiers"
+                    <input type="file" capture="user" multiple="true">
+                </label>
+            </section>
+            <!--Form-->
+            <section>
+                <form onsubmit="event.preventDefault()">
+                    <label for="">
+                        "Votre email"
+                        <input type="email" placeholder = "sado.toledo@gmail.com">
+                    </label>
+
+                    <label for="">
+                        "Emails destinataires (séparés par des points-virgules"
+                        <input type="mail">
+                    </label>
+                    <input type="submit" id="validateBtn" value="Valider">
+                </form>
+            </section>
+        </div>
+
+    </main>
+
+</body>
+</html>
