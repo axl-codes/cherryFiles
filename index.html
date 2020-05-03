@@ -3,51 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-<body>
+<body> 
     <main>
         <header>
             <figure>
-                <img src="" alt="">
+                <img src="images/fruit.svg" alt="Logo CherryFiles">
             </figure>
             <p>
-                <span>.Cherry</span>
-                <span>Files</span>
+                <span id = "cherry">.Cherry</span>
+                <span id= "files">Files</span>
             </p>
         </header>
-        <div>
+        <div class= "wrapper">
             <!--Dropzone-->
-            <section style="max-width: 520px; width: 100%">
-                <section>
-                    <p>
-                        "Déposez ici vos fichiers."
+            <section id="dropzone" class="blocks">
+                <!-- Dropzone content -->
+                <section class="dropzone-files" style="max-width: 520px; width: 100%">
+                    <p class ="dropzone-msg">
+                        Déposez ici vos fichiers.
                         <br>
-                        "2Go max."
+                        2Go max.
                     </p>
                 </section>
 
+                <p class="dropzone_errors"></p>
+
+                <!--Dropzone menu-->
+                <section>
+                    <button class="btn btn-style" >Vider</button>
+                    <label id="put-file" class="btn">
+                        Ajouter des fichiers
+                        <input type="file" capture="user" multiple>
+                    </label>
+                </section>
             </section>
-            <p></p>
-            <!--Dropzone menu-->
-            <section>
-                <button>Vider</button>
-                <label for="">
-                    "Ajouter des fichiers"
-                    <input type="file" capture="user" multiple="true">
-                </label>
-            </section>
+            
             <!--Form-->
-            <section>
+            <section class="blocks">
                 <form onsubmit="event.preventDefault()">
                     <label for="">
-                        "Votre email"
+                        Votre email
                         <input type="email" placeholder = "sado.toledo@gmail.com">
                     </label>
 
                     <label for="">
-                        "Emails destinataires (séparés par des points-virgules"
-                        <input type="mail">
+                        Emails destinataires (séparés par des points-virgules)
+                        <input type="text">
                     </label>
                     <input type="submit" id="validateBtn" value="Valider">
                 </form>
@@ -55,6 +59,6 @@
         </div>
 
     </main>
-
+<script src="js/script.js"></script>
 </body>
 </html>
